@@ -27,6 +27,8 @@ jobs:
 
       - name: Build Client
         run: npm run build
+        env:
+          CI: false
         working-directory: ./client
 
   server-validate:
